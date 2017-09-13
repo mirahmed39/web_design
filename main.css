@@ -5,3 +5,20 @@ h1 {
 h3 {
 	color: red;
 }
+
+.my-desc img {
+	float: left;
+	width: 10em;
+	height: 10em;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.my-desc {
+
+}
+
+.my-desc p {
+	color: black;
+	font-size: 1.5em;
+}

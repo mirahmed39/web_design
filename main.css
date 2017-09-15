@@ -1,16 +1,53 @@
+body {
+	background-color: #f2f2f2;
+}
+.name-header {
+	padding: 0;
+	margin: 0;
+	font-size: 4em;
+	font-family: 'Dancing Script';
+	text-align: center;
+}
+
+img {
+	margin-bottom: 2em;
+}
 .my-desc img {
 	float: left;
-	width: 10em;
-	height: 10em;
+	width: 8em;
+	height: 8em;
 	border-radius: 50%;
 	margin-right: 20px;
 }
 
-.my-desc {
+#container {
+ 	/*background-color: rgb(211, 211, 211);*/
+ 	margin-left: 6em;
+ 	margin-right: 6em;
+ 	clear: both;
+ }
 
-}
-
-.my-desc p {
-	color: black;
+ #container p {
+ 	padding-top: 5px;
 	font-size: 1.5em;
+	line-height: 150%;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 700;
+ }
+
+
+.country img {	
+	float: right;
+	width: 8em;
+	height: 8em;
+	border-radius: 50%;
+	margin-right: 20px;
 }
+
+.nyu-face iframe {	
+	float: left;
+	height:  10em;
+	width:  15em;
+}
+
+

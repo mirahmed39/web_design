@@ -12,6 +12,11 @@ body {
 img {
 	margin-bottom: 2em;
 }
+
+img:hover{
+	opacity: .75;
+}
+
 .my-desc img {
 	float: left;
 	width: 8em;

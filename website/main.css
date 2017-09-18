@@ -1,0 +1,82 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+.cover-photo {
+	height: 22em;
+	width: 100%;
+	position: relative;
+	z-index: 10;
+	margin-top: 30px;
+	filter: invert(35%); 
+}
+
+header h1 {
+	text-align: center;
+}
+
+nav {
+	text-align: center;
+	border-radius: 30px;
+	background: rgb(0,106,78);
+	padding: 10px;
+	transition-duration: .8s;
+	transition-timing-function: ease-out;
+}
+
+nav a {
+	font-size: 1.5em;
+	margin: 10px;
+	text-decoration: none;
+	color: white;
+	transition-duration: .8s;
+}
+
+nav:hover {
+	background: white;
+}
+
+nav:hover a {
+	color: green;
+	font-size: 1.6em;
+}
+
+section {
+	background: rgb(240, 240, 240);
+	margin-top: 1em;
+	margin-left: 4em;
+	margin-right: 4em;
+	padding: 2em;
+}
+
+.about-header {
+	text-align: center;
+	font-size: 2em;
+}
+
+.flag {
+	float:right;
+	width: 16em;
+	height: 10em;
+	margin-left: 10px;
+}
+
+.about-desc {
+	font-size: 1.4em;
+	line-height: 1.5;
+}
+
+.map {
+	float:left;
+	width: 16em;
+	height: 12em;
+	margin-right: 10px;
+
+}
+
+.map-desc {
+	font-size: 1.4em;
+	line-height: 1.5;
+}
+
+

@@ -34,6 +34,7 @@ nav a {
 
 nav:hover {
 	background: white;
+	border: .5px solid rgb(0,106,78);;
 }
 
 nav:hover a {

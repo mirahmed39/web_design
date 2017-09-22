@@ -1,0 +1,231 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+.cover-photo {
+	height: 22em;
+	width: 100%;
+	position: relative;
+	z-index: 10;
+	margin-top: 30px;
+	filter: invert(35%); 
+}
+
+header h1 {
+	text-align: center;
+}
+
+nav {
+	text-align: center;
+	border-radius: 30px;
+	background: rgb(0,106,78);
+	padding: 10px;
+	transition-duration: .8s;
+	transition-timing-function: ease-out;
+}
+
+nav a {
+	font-size: 1.5em;
+	margin: 10px;
+	text-decoration: none;
+	color: white;
+	transition-duration: .8s;
+}
+
+nav:hover {
+	background: white;
+	border: .5px solid rgb(0,106,78);;
+}
+
+nav:hover a {
+	color: green;
+	font-size: 1.6em;
+}
+
+section {
+	background: rgb(240, 240, 240);
+	margin-top: 1em;
+	margin-left: 4em;
+	margin-right: 4em;
+	padding: 2em;
+}
+
+.about-header {
+	text-align: center;
+	font-size: 2em;
+}
+
+.flag {
+	float:right;
+	width: 16em;
+	height: 10em;
+	margin-left: 10px;
+    position: relative;
+}
+
+.about-desc {
+	font-size: 1.4em;
+	line-height: 1.5;
+}
+
+.map {
+	float:left;
+	width: 16em;
+	height: 12em;
+	margin-right: 10px;
+
+}
+
+.map-desc {
+	font-size: 1.4em;
+	line-height: 1.5;
+}
+
+
+
+/******* styles for facts.html ***********/
+.facts-header {
+	text-align: center;
+}
+
+.facts-gallery {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+#gallery-image {
+	float: left;
+	margin-right: .5em;
+}
+
+#gallery-image img {
+	margin: 0;
+	width: 30em;
+	height: 18em;
+}
+
+#gallery-image img:hover {
+	opacity: .60;
+}
+
+#facts-description {
+	padding: 1em;
+	line-height:1.5;
+	border-radius: 2em;
+	background: rgb(240, 240, 240);
+	width: 30em;
+	height: auto;
+}
+
+#temp {
+	clear: both;
+}
+
+.pop-float {
+    float: left;
+}
+
+.dhaka-float {
+    float: right;
+}
+
+/******* styles for wonders.html ***********/
+.wonder-header {
+	text-align: center;
+}
+
+.cox-header {
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: 3px;
+}
+
+#wonder-section {
+    margin-left: 10em;
+    margin-right: 10em;
+    border-radius: 5px 50px;
+}
+
+.cox-bazar-image {
+    width: 100%;
+    height: 30em;
+}
+
+#forest-section {
+    margin-left: 10em;
+    margin-right: 10em;
+    border-radius: 50px 5px;
+    margin-bottom: 2em; 
+}
+
+.forest-image {
+    width: 100%;
+    height: 30em;
+    margin-top: 2em;
+}
+
+/********* styles for cuisine.html *********/
+
+.cuisine-header {
+    text-align: center; 
+}
+
+.cuisine-gallery {
+    margin-left:10em;
+    margin-right: 10em;
+    width: auto;
+}
+
+.cuisine-gallery img {
+    width: 30em;
+    height: 20em;
+}
+
+/********* styles for contacts.html *********/
+
+.contact-form {
+    margin-left: 30em;
+    margin-right: 30em;
+}
+
+fieldset {
+    border: 1.5px solid green;
+    border-radius: 10px;
+    line-height: 1.2;
+    font-size: 1.5em;
+    padding-left: 2em;
+    box-shadow: 10px 10px 5px green;
+}
+
+fieldset input {
+    margin-left: 1em;
+}
+
+legend {
+    padding: 3px;
+    border: 1px solid green;
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 0px 0px green;
+}
+
+.submit-button {
+    text-align: center;
+    width: 15em;
+    font-size: .8em;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

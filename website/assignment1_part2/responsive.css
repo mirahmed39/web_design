@@ -1,0 +1,128 @@
+@media screen and (max-width:600px) {
+    /*** small screens ***/
+    header h1 {
+        font-size: 1.5em;
+    }
+    nav a {
+        color: white;
+        font-size: 1.3em;
+        margin: 3px;
+    }
+    nav:hover a {
+	   color: green;
+	   font-size: 1.3em;
+    }
+    
+    .cover-photo {
+        height: 15em;
+    }
+    
+    .flag {
+        width:10em;
+        height: 7em;
+    }
+    
+    .map {
+        width: 10em;
+        height: 7em;
+    }
+    
+    section {
+        width: 100%;
+        margin: 0px;
+        margin-top: 8px;
+    }
+    
+    .map-section header {
+        font-size: 1.5em;
+    }
+    
+    .about-header {
+        font-size: 1.5em;
+    }
+    
+    .about-desc {
+        font-size: 1.1em;
+    }
+    
+    .map-desc {
+        font-size: 1.1em;
+    }
+    
+    
+    /**** facts *****/
+    #gallery-image img {
+	   margin: 0;
+	   width: 20em;
+	   height: 15em;
+    }
+    
+    #facts-description {
+        width: 20em;
+    }
+    
+    .facts-gallery {
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0px auto;
+    }
+    
+     /**** wonders *****/
+    .cox-bazar-image {
+        height: 20em;
+    }
+    
+    .forest-image {
+        height: 20em;
+    }
+    
+    .wonder-header {
+        font-size: 1.2em;
+    }
+    
+    #wonder-section {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
+    
+    #forest-section {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .cox-header {
+        font-size: 1.3em;
+    }
+    
+    /**** cuisine *****/
+    .cuisine-header {
+        font-size: 1.3em;
+    }
+    
+    .cuisine-gallery {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .cuisine-gallery img {
+        clear: both;
+        width: 25em;
+        height: 16em;
+    }
+    
+    /**** contacts *****/
+    .contact-form {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    fieldset {
+        font-size: 1.2em; 
+    }
+    
+    .submit-button {
+        font-size: 1.3em;
+        border-radius: 5px;
+    }
+    
+}
+

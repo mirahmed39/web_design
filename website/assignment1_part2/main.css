@@ -13,6 +13,8 @@ body {
 
 header h1 {
 	text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 3em;
 }
 
 nav {
@@ -95,7 +97,7 @@ section {
 
 #gallery-image {
 	float: left;
-	margin-right: .5em;
+	margin-right: 0px auto;
 }
 
 #gallery-image img {
@@ -206,7 +208,7 @@ legend {
     padding: 3px;
     border: 1px solid green;
     border-radius: 10px;
-    box-shadow: inset 3px 3px 0px 0px green;
+    box-shadow: inset 0 0 20px green;
 }
 
 .submit-button {
@@ -215,6 +217,32 @@ legend {
     font-size: .8em;
     padding: 5px;
     margin-top: 20px;
+}
+
+/*******************************
+footer style
+*******************************/
+footer {
+	clear: both;
+	width: 100%;
+	margin-top: 50px;
+	padding: 7px;
+	text-align: center;
+	margin-bottom: 0;
+	margin-right: none;
+	margin-left: none;
+	box-shadow: inset 0 0 40px green;
+}
+footer img {
+	padding-top: 5px;
+	padding-left: 7px;
+	width: 40px;
+	height: 40px;
+	margin: 0 5px;
+}
+
+footer p {
+	color: black;
 }
 
 

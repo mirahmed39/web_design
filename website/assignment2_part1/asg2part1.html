@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<h1 id="mainHeader">Mir Ahmed --- Assignment 2 Part 1</h1>
+
+	<div class="container">	
+		<h2>Style</h2>
+		<h3>Click the button below to see 5 styles realted to the document</h3>
+		<div id="fiveStyles"></div> <br>
+		<button onclick="changeFiveStyles()">Change 5 Styles</button>
+		<h3>Click on the header below to the changes</h3>
+		<h3 id="changeStyle" onclick="change()">The style for this line will change once you <strong>click</strong> on it.</h3>
+	</div>
+
+	<div class="container">
+		<h2>Prize</h2>
+		<h3>Below is the list of prizes you can win:</h3>
+		<div id="allPrizes"></div>
+		<br>
+		<div id="prize"></div>
+		<br>
+		<button onclick="randArray()">Win a Prize!</button>
+	</div>
+
+	<div class="container">
+	<h2>Swap Text</h2>
+		<p id="p1" onclick="swapT()">This is the first paragraph. It will show the content of the 2nd praragraph if you click on it.</p>
+		<p id="p2" onclick="swapT()">This is the second paragraph. It will show the content of the 1st praragraph if you click on it.</p>
+	</div>
+
+	<div class="container">
+	<h2>Swap Image</h2>
+		<img id="img1" src="images/image1.jpg" alt="smiling" onclick="swapI()">
+		<img id="img2" src="images/image2.jpg" alt="serious face" onclick="swapI()">
+	</div>
+
+	<div class="container">
+		<h2>Generate a New Document Application</h2>
+		<img id="img3" src="images/image3.jpg" alt="howbowdah" onclick="newDoc()">
+	</div>
+	
+	<div class="container">
+		<h2>Miles to Kilometer Converter</h2>	
+		<label for="miles">Enter a number in mile(s):</label>
+		<input id="mile" type="number" name="miles">
+		<br><br>
+		<label for="kilometers">This is the conversion to Kilometer(s)</label>
+		<textarea id="kilometers"></textarea><br><br>
+		<button onclick="convert()">Convert</button>
+	</div>
+	<br><br>
+	<script type="text/javascript" src="asg2part1.js"></script>
+</body>
+</html>

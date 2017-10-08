@@ -1,0 +1,58 @@
+h2 {
+	text-align: center;
+}
+
+#mainHeader {
+	text-align: center;
+}
+.container {
+	text-align: center;
+	margin-left: 10em;
+	margin-right: 10em;
+	background: #F0F0F2;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+
+}
+
+#changeStyle {
+	text-align: center;
+}
+
+#allPrizes {
+	line-height: 2;
+	font-size: 1.2em;
+}
+
+#prize {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#img1 {
+	width: 15em;
+	height: 15em;
+	border-radius: 50%;
+}
+
+#img2 {
+	width: 15em;
+	height: 15em;
+	border-radius: 50%;
+}	
+
+#img3 {
+	width: 15em;
+	height: 15em;
+	border-radius: 50%;
+}
+
+#p1 {
+	font-size: 1.2em;
+}
+
+#p2{
+	font-size: 1.2em;
+}
+

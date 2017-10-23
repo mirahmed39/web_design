@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+}
+
+#main-header {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+}
+#app-container {
+    line-height: 1.8;
+    background: #F0F0F2;
+    margin-left: 10em;
+    margin-right: 10em;
+    padding: 15px;
+    height: 100%;
+}
+
+hr {
+    width: 50%;
+}
+
+h2 {
+    font-family: 'Arapey', serif;
+    font-size: 2em;
+}
+
+.inner-part {
+    font-family: 'Neucha', cursive;
+    font-size: 1.5em;
+}
+
+#prize {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#bday-output-container > p {
+    font-family: 'Neucha', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#calendar-link {
+    text-decoration: none;
+    font-family: 'Neucha', cursive;
+    font-size: 1.5em;
+}
+
+button {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 30px;
+    background: #fc543e;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+}

@@ -1,0 +1,54 @@
+#calendar-header {
+    text-align: center;
+    background: #5e5e5a;
+    color: white;
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+}
+
+#app-container {
+    background: #F0F0F2;
+    text-align: center;
+    margin-left: 10em;
+    margin-right: 10em;
+    padding: 15px;
+}
+
+#date-header {
+    font-family: 'Arapey', serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #5e215b;
+}
+
+#output {
+    font-family: 'Neucha', cursive;
+    font-size: 2em;
+}
+
+#submit-button {
+    font-family: 'Amatic SC', cursive;
+    border: 2px solid #5e215b;
+    border-radius: 30px;
+    background: #cb2dd9;
+    color: white;
+    min-width: 200px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+input {
+    font-size: 2.3em;
+    min-height: 60px;
+    min-width: 200px;
+}
+
+#holiday-image {
+    max-width: 500px;
+    max-height: 500px;
+    -webkit-transition: width 2s; /* Safari */
+    transition: 2s;
+}

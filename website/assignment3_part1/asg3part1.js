@@ -28,6 +28,7 @@ function bdayCalc() {
     const firstDateObj = new Date(document.getElementById('first-bday').value);
     const secondFullName = document.getElementById('second-full-name').value;
     const secondDateObj = new Date(document.getElementById('second-bday').value);
+    console.log(firstDateObj);
 
     output += firstFullName + " was born in " + (firstDateObj.getMonth() + 1) + '/' + (firstDateObj.getDate() + 1) + '/' + firstDateObj.getFullYear() + '<br>';
     output += secondFullName + " was born in " + (secondDateObj.getMonth() + 1) + '/' + (secondDateObj.getDate() + 1) + '/' + secondDateObj.getFullYear() + '<br>';

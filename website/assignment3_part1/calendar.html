@@ -4,9 +4,20 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Calendar Holiday</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="calendar.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Arapey|Neucha" rel="stylesheet">
 </head>
 <body>
-	<h1>Calendar Holiday Application</h1>
+	<h1 id="calendar-header">Calendar Holiday Application</h1>
+
+	<div id="app-container">
+		<p id="date-header">Please Enter a Date to Check for a Holiday</p>
+		<input type="date" id="date-input" name="date-input">
+		<button type="submit" id="submit-button" onclick="findHolidays()">Submit</button>
+		<p id="output"></p>
+		<br>
+		<img id="holiday-image" src="">
+	</div>
+	<script type="text/javascript" src="calendar.js"></script>
 </body>
 </html>

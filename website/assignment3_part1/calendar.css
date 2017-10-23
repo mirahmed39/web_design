@@ -49,6 +49,4 @@ input {
 #holiday-image {
     max-width: 500px;
     max-height: 500px;
-    -webkit-transition: width 2s; /* Safari */
-    transition: 2s;
 }

@@ -1,0 +1,34 @@
+body {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.57);
+	color: white;
+}
+
+#header {
+	font-size: 4em;
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
+}
+
+img {
+	width: 400px;
+	height: 400px;
+}
+
+#customer-form label {
+	width:  150px;
+	text-align: left;
+}
+
+input {
+	border-radius: 50px;
+	padding-left: 10px;
+}
+
+#customer-form {
+	color: black;
+}
+
+#receipt-container {
+	color: black;
+}

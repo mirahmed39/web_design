@@ -68,7 +68,12 @@ function receipt() {
 				break;
 			}
 			else {
-				output += ""+ elementsInCustomerForm[i].name + ": " + elementsInCustomerForm[i].value + "<br>";
+				if(elementsInCustomerForm[i].name === 'card-number'){
+					const cardNumber = elementsInCustomerForm[i].value;
+					const securedCardNumberFormat = cardNumber.replace(cardNumber.substring(0,12), "xxxxxxxxxxxx-");
+					output += ""+ elementsInCustomerForm[i].name + ": " + securedCardNumberFormat + "<br>";
+				} else
+					output += ""+ elementsInCustomerForm[i].name + ": " + elementsInCustomerForm[i].value + "<br>";
 			}
 		}
 	}

@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+}
+nav {
+    text-align: center;
+}
+header {
+    color: purple;
+    font-size: 2em;
+}
+
+hr {
+    width: 70%;
+}
+
+#image-container > img {
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+}
+
+#div-to-animate {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: purple;
+}
+
+#animate {
+    position: relative;
+    clear: both;
+    margin-bottom: 10px;
+}

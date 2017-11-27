@@ -4,6 +4,10 @@ body {
 nav {
     text-align: center;
 }
+
+nav > a {
+    padding: 10px;
+}
 header {
     color: purple;
     font-size: 2em;

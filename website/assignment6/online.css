@@ -1,0 +1,8 @@
+#receipt {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	background-color: black;
+	border: 1px dashed white;
+	font-size: 1.7em;
+}

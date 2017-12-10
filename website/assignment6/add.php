@@ -4,6 +4,12 @@
 </head>
 
 <body>
+<nav>
+	<a href='madlib.html'>Mad Libs Application</a>
+	<a href='calculator.html'>Calculator Application</a>
+	<a href='online.php'>Online Store Form</a>
+	<a href='quiz.html'>Quiz Application</a>
+</nav>
 
 <h1>Result from the calculator program</h1>
 <?php

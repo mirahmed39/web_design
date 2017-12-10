@@ -1,0 +1,23 @@
+.question {
+	font-weight: bold;	
+}
+
+.right {
+	background-color: green;
+	font-weight: bold;
+}
+
+.wrong {
+	background-color: red;
+	font-weight: bold;
+}
+
+.right-answer {
+	background-color: yellow;
+	font-weight: bold;
+}
+
+#score {
+	background-color: orange;
+	font-weight: bold;
+}

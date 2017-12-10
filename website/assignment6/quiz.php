@@ -14,50 +14,56 @@ if(isset($_POST['submit'])) {
 	$answer3 = $_POST['question3'];
 	$correctAnswers = 0;
 	if($answer1 == $answerKey[0]) {
-		print('<p>Question 1:</p>')
-		print('<p>In what month out Independence is celebrated?</p>')
-		print('<p>you answered $answer1</p>')
-		print('<p>You got it right!!!</p>');
+		print("<p>Question 1:</p>");
+		print("<p>In what month out Independence is celebrated?</p>");
+		print("<p>you answered $answer1</p>");
+		print("<p>You got it right!!!</p>");
+		print('<hr>');
 		$correctAnswers += 1;
 	} else {
-		print('<p>Question 1:</p>')
-		print('<p>In what month out Independence is celebrated?</p>')
-		print('<p>you answered $answer1</p>')
-		print('<p>Your answer is incorrect.</p>');
-		print('<p>The correct answer is $answerKey[0]</p>');
+		print("<p>Question 1:</p>");
+		print("<p>In what month out Independence is celebrated?</p>");
+		print("<p>you answered $answer1</p>");
+		print("<p>Your answer is incorrect.</p>");
+		print("<p>The correct answer is $answerKey[0]</p>");
+		print('<hr>');
 	}
 
 	if($answer2 == $answerKey[1]) {
-		print('<p>Question 2:</p>')
-		print('<p>Which president has been assasinated?</p>')
-		print('<p>you answered $answer2</p>')
-		print('<p>You got it right!!!</p>');
+		print("<p>Question 2:</p>");
+		print("<p>Which president has been assasinated?</p>");
+		print("<p>you answered $answer2</p>");
+		print("<p>You got it right!!!</p>");
 		$correctAnswers += 1;
+		print('<hr>');
 	} else {
-		print('<p>Question 2:</p>')
-		print('<p>Which president has been assasinated?</p>')
-		print('<p>you answered $answer2</p>')
-		print('<p>Your answer is incorrect</p>');
-		print('<p>The correct answer is $answerKey[1]</p>');
+		print("<p>Question 2:</p>");
+		print("<p>Which president has been assasinated?</p>");
+		print("<p>you answered $answer2</p>");
+		print("<p>Your answer is incorrect</p>");
+		print("<p>The correct answer is $answerKey[1]</p>");
+		print('<hr>');
 	}
 	if($answer3 == $answerKey[2]) {
-		print('<p>Question 3:</p>')
-		print('<p>Which president was a Militray General?</p>')
-		print('<p>you answered $answer3</p>')
-		print('<p>You got it right!!!</p>');
+		print("<p>Question 3:</p>");
+		print("<p>Which president was a Militray General?</p>");
+		print("<p>you answered $answer3</p>");
+		print("<p>You got it right!!!</p>");
 		$correctAnswers += 1;
+		print('<hr>');
 	} else {
-		print('<p>Question 3:</p>')
-		print('<p>Which president was a Militray General?</p>')
-		print('<p>you answered $answer3</p>')
-		print('<p>Your answer is incorrect</p>');
-		print('<p>The correct answer is $answerKey[2]</p>
+		print("<p>Question 3:</p>");
+		print("<p>Which president was a Militray General?</p>");
+		print("<p>you answered $answer3</p>");
+		print("<p>Your answer is incorrect</p>");
+		print("<p>The correct answer is $answerKey[2]</p>");
+		print('<hr>');
 	}
 
 	$score = ($correctAnswers / count($answerKey)) * 100;
-	print('<p>Your score in this quiz is: $score</p>');
+	print("<p>Your score in this quiz is: $score</p>");
 } else
-	print('<p>Plese fill out the entire form then click the submit button.</p>');
+	print("<p>Plese fill out the entire form then click the submit button.</p>");
 ?>
 </body>
 </html>

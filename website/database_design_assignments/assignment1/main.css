@@ -1,0 +1,18 @@
+body {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+header {
+	text-align: center;
+}
+
+article h2 {
+	text-align: center;
+}
+
+article p {
+	font-size: 1.2em;
+	line-height: 2;
+	
+}

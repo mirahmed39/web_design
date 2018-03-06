@@ -1,0 +1,19 @@
+steps
+
+1. write the index.html file containing the <form> for user input
+2. write a .css file for the .html file
+3. upload the data to the server (this case we have a text file) and the .sql script
+4. open sqlite
+	a. create a .db file
+	b. '.read' to execute the .sql script
+	c. use .import to import the data into the database
+	d. run a few queries to verify the data are imported correctly.
+5. write the python script that the <form> calls on "action"
+	a. fetch the form data
+	b. attach the .css file
+	c. open sqlite database
+	d. create the query (which is a string in python)
+	e. python passes the query to sqlite for it to be executed
+	f. sql runs the query
+	g. sqlite gives the result back to python
+	i. python formats the output and renders the document for display 

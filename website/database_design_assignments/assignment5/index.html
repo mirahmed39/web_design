@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tap Search</title>
+	<link rel='stylesheet' type='text/css' href='pyscript.css'>
+</head>
+
+
+<body>
+	<header>
+		<h1>Welcome to the Application</h1>
+	</header>
+	
+	<p id="description">Use from the selections below to find the total number of TAP recipients by year.</p>
+	<form method='GET' action='process_html.py'>
+		<p>Check the years you want search for</p>
+		<input type='checkbox' name='year' value='2000'>2000</input>
+		<input type='checkbox' name='year' value='2001'>2001</input>
+		<input type='checkbox' name='year' value='2002'>2002</input>	
+		<input type='checkbox' name='year' value='2003'>2003</input>
+		<input type='checkbox' name='year' value='2004'>2004</input>
+		<input type='checkbox' name='year' value='2005'>2005</input>
+		<input type='checkbox' name='year' value='2006'>2006</input>
+		<input type='checkbox' name='year' value='2007'>2007</input>
+		<input type='checkbox' name='year' value='2008'>2008</input>
+		<input type='checkbox' name='year' value='2009'>2009</input>
+		<input type='checkbox' name='year' value='2010'>2010</input>
+		<input type='checkbox' name='year' value='2011'>2011</input>
+		<input type='checkbox' name='year' value='2012'>2012</input>
+		<input type='checkbox' name='year' value='2013'>2013</input>
+		<input type='checkbox' name='year' value='2014'>2014</input>
+		<input type='checkbox' name='year' value='2015'>2015</input>
+		<input type='checkbox' name='year' value='2016'>2016</input>
+		
+		<p>Which category want to use to sort the results?</p>
+		<select name='sort_category'>
+			<option value='year'>Year</option>
+			<option value='tap_recipient'>TAP Recipients</option>
+		</select>
+
+		<p>Do you want to sort by Ascending or Descending order?</p>
+		<select name='order'>
+			<option value='ASC'>Ascending</option>
+			<option value='DESC'>Descending</option>
+		</select>
+		<br><br>
+		<input type='reset'></input> <br><br>
+		<input type='submit' value='Submit'></input>
+
+	</form>
+</body>
+
+</html>
+
+
+

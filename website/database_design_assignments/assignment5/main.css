@@ -1,0 +1,23 @@
+body {
+	text-align: center;
+}
+
+header h1 {
+	color: purple;
+}
+
+hr {
+	width: 80%;
+}
+
+input[type=submit] {
+	border-radius: 30px;
+	padding: 10px;
+	color: purple;	
+}
+
+input[type=reset] {
+	border-radius: 30px;
+	padding: 5px;
+	color: purple;
+}

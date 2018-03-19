@@ -2,51 +2,53 @@
 <html>
 <head>
 	<title>Tap Search</title>
-	<link rel='stylesheet' type='text/css' href='pyscript.css'>
+	<link rel='stylesheet' type='text/css' href='main.css'>
 </head>
 
 
 <body>
 	<header>
-		<h1>Welcome to the Application</h1>
+		<h1>Welcome to sqlite Application</h1>
 	</header>
 	
-	<p id="description">Use from the selections below to find the total number of TAP recipients by year.</p>
-	<form method='GET' action='process_html.py'>
-		<p>Check the years you want search for</p>
-		<input type='checkbox' name='year' value='2000'>2000</input>
-		<input type='checkbox' name='year' value='2001'>2001</input>
-		<input type='checkbox' name='year' value='2002'>2002</input>	
-		<input type='checkbox' name='year' value='2003'>2003</input>
-		<input type='checkbox' name='year' value='2004'>2004</input>
-		<input type='checkbox' name='year' value='2005'>2005</input>
-		<input type='checkbox' name='year' value='2006'>2006</input>
-		<input type='checkbox' name='year' value='2007'>2007</input>
-		<input type='checkbox' name='year' value='2008'>2008</input>
-		<input type='checkbox' name='year' value='2009'>2009</input>
-		<input type='checkbox' name='year' value='2010'>2010</input>
-		<input type='checkbox' name='year' value='2011'>2011</input>
-		<input type='checkbox' name='year' value='2012'>2012</input>
-		<input type='checkbox' name='year' value='2013'>2013</input>
-		<input type='checkbox' name='year' value='2014'>2014</input>
-		<input type='checkbox' name='year' value='2015'>2015</input>
-		<input type='checkbox' name='year' value='2016'>2016</input>
+	<h2 id="description">Use the form below to find the total number of TAP recipients by year.</h2>
+	<form method='POST' action='process_html.py'>
+		<hr>
+		<h3>Check the years you want search for (shows total recipients for <b> all years</b> if none selected)</h3>
+		<input type='checkbox' name='2000' value='2000'>2000</input>
+		<input type='checkbox' name='2001' value='2001'>2001</input>
+		<input type='checkbox' name='2002' value='2002'>2002</input>	
+		<input type='checkbox' name='2003' value='2003'>2003</input>
+		<input type='checkbox' name='2004' value='2004'>2004</input>
+		<input type='checkbox' name='2005' value='2005'>2005</input>
+		<input type='checkbox' name='2006' value='2006'>2006</input>
+		<input type='checkbox' name='2007' value='2007'>2007</input>
+		<input type='checkbox' name='2008' value='2008'>2008</input>
+		<input type='checkbox' name='2009' value='2009'>2009</input>
+		<input type='checkbox' name='2010' value='2010'>2010</input>
+		<input type='checkbox' name='2011' value='2011'>2011</input>
+		<input type='checkbox' name='2012' value='2012'>2012</input>
+		<input type='checkbox' name='2013' value='2013'>2013</input>
+		<input type='checkbox' name='2014' value='2014'>2014</input>
+		<input type='checkbox' name='2015' value='2015'>2015</input>
+		<input type='checkbox' name='2016' value='2016'>2016</input>
 		
-		<p>Which category want to use to sort the results?</p>
+		<hr>
+		<h3>Which category want to use to sort the results?</h3>
 		<select name='sort_category'>
 			<option value='year'>Year</option>
 			<option value='tap_recipient'>TAP Recipients</option>
 		</select>
-
-		<p>Do you want to sort by Ascending or Descending order?</p>
+		<hr>
+		<h3>Do you want to sort by Ascending or Descending order?</h3>
 		<select name='order'>
 			<option value='ASC'>Ascending</option>
 			<option value='DESC'>Descending</option>
 		</select>
-		<br><br>
+		<hr>
 		<input type='reset'></input> <br><br>
 		<input type='submit' value='Submit'></input>
-
+		<hr>
 	</form>
 </body>
 

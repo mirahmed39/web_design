@@ -6,6 +6,13 @@ header h1 {
 	color: purple;
 }
 
+.data-description {
+	margin-left: 10%;
+	margin-right: 10%;
+	line-height: 1.5;
+	font-size: 1.2em;
+}
+
 hr {
 	width: 80%;
 }

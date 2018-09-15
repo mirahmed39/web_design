@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movies</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<header>
+		<p><span class='title-wrapper'>Movies Application with <strong><span class='linux'>L</span><span class="apache">A</span><span class="mysql">M</span><strong class='python'>P</strong></strong> Stack</span></p>
+	</header>
+	<p class="description">
+	<b>Description</b>: This project allows the user the user to see movie inforamtion based on their category 
+	and country of origin. Upon selecting one option from each dropbox, the user will be able to see relevant information provided by the database in a tabular fashion. The table would be empty if the database cannot find results to the correspoding user options. For example, if the user selects <em>USA</em> as the country and <em>Action</em> as a cateogry, then the table will display the name of the movies relevant to that category, country of origin, category, the year they were released, and links that take to their corresponding IMDB pages. 
+	</p>
+	<form class="jumbotron movie-form" name="movie-form" action="process_html.py" method="GET">
+		<p class="selection-description">
+			Please select a movie category.
+		</p>
+		<select class="categories" name="movie-category">
+			<option value="Action">Action</option>
+			<option value="Adventure">Adventure</option>
+			<option value="Sci-Fi">Sci-Fi</option>
+			<option value="Fantasy">Fantasy</option>
+			<option value="Biography">Biography</option>
+			<option value="Thriller">Thriller</option>
+			<option value="Drama">Drama</option>
+			<option value="History">History</option>
+			<option value="Family">Family</option>
+			<option value="Musical">Musical</option>
+			<option value="Comedy">Comedy</option>
+			<option value="Romance">Romance</option>
+			<option value="Crime"></option>
+		</select>
+		<p class="selection-description">
+			Select a country that the movies were first released.
+		</p>
+		<select class="countries" name="country">
+			<option value="USA">United States</option>
+			<option value="France">France</option>
+			<option value="Germany">Germany</option>	
+			<option value="England">England</option>
+		</select>
+		<hr>
+		<input type="reset" name="reset" value="Reset Value">
+		<input type="submit" name="submit">
+	<form>
+</body>
+</html>

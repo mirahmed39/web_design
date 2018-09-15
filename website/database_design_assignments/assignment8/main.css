@@ -1,0 +1,50 @@
+body {
+	text-align: center;
+}
+
+header {
+	font-size: 1.5em;
+}
+
+header > p {
+	margin-top: 5px;
+}
+hr {
+	width: 80%;
+}
+
+.title-wrapper {	
+	padding: 10px;
+	background-color: #e9ecef;
+}
+
+.description {
+	padding: 10px;
+	font-size: 1.2em;
+	color: gray;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.selection-description {
+	font-size: 1.2em;
+}
+
+.linux {color:purple;}
+.apache {color:red;}
+.mysql {color:blue;}
+.python {color:yellow;}
+
+input[type=submit] {
+	border-radius: 30px;
+	padding: 5px;
+	color: purple;
+	width: 100px;	
+}
+
+input[type=reset] {
+	border-radius: 30px;
+	padding: 5px;
+	color: purple;
+	width: 100px;
+}

@@ -1,0 +1,40 @@
+Script started on Thu 03 May 2018 12:06:02 PM EDT
+[ma3599@i6 assignment9]$ loadmongo
+[ma3599@i6 assignment9]$ mongologin
+MongoDB shell version: 3.2.0
+connecting to: class-mongodb.cims.nyu.edu:27017/ma3599
+> db.zips.count()[3G[Jdb.zips.count()[18G
+29353
+> db.zips.find({"state": "GA", "pop": {$ne:0}},{_id:0, "pop":1, "state": "GA"}).sort({"pop":1}).limit(5)[3G[Jdb.zips.find({"state": "GA", "pop": {$ne:0}},{_id:0, "pop":1, "state": "GA"}).sort({"pop":1}).limit(5)[105G
+{ "pop" : 18, "state" : "GA" }
+{ "pop" : 98, "state" : "GA" }
+{ "pop" : 112, "state" : "GA" }
+{ "pop" : 120, "state" : "GA" }
+{ "pop" : 121, "state" : "GA" }
+> db.zips.find({"city":"BRONX"}, {"_id":1, "pop":1}).limit(3)[3G[Jdb.zips.find({"city":"BRONX"}, {"_id":1, "pop":1}).limit(3)[62G
+{ "_id" : "10451", "pop" : 42854 }
+{ "_id" : "10452", "pop" : 55890 }
+{ "_id" : "10453", "pop" : 70544 }
+> db.zips.find({"state": {$nin:["PR", "AK", "HI"]}},{}).count()[3G[Jdb.zips.find({"state": {$nin:["PR", "AK", "HI"]}},{}).count()[64G
+29078
+> db.zips.find({"state": {$in:["NY", "NJ", "CT"]}},{}).count()[3G[Jdb.zips.find({"state": {$in:["NY", "NJ", "CT"]}},{}).count()[63G
+2398
+> db.zips.aggregate([{$group:{_id:"$state", "count":{$sum:1}}}, {$sort:{"count":1}}, {$limit:5}])[3G[Jdb.zips.aggregate([{$group:{_id:"$state", "count":{$sum:1}}}, {$sort:{"count":1}}, {$limit:5}])[98G
+{ "_id" : "DC", "count" : 24 }
+{ "_id" : "DE", "count" : 53 }
+{ "_id" : "RI", "count" : 69 }
+{ "_id" : "HI", "count" : 80 }
+{ "_id" : "NV", "count" : 104 }
+> db.zips.aggregate([{$group:{_id:"$city", "count":{$sum:1}}}, {$match:{"count":{$gt:50}}}])[3G[Jdb.zips.aggregate([{$group:{_id:"$city", "count":{$sum:1}}}, {$match:{"count":{$gt:50}}}])[93G
+{ "_id" : "LOS ANGELES", "count" : 56 }
+{ "_id" : "DALLAS", "count" : 51 }
+{ "_id" : "PHILADELPHIA", "count" : 52 }
+{ "_id" : "HOUSTON", "count" : 101 }
+> exit[3G[Jexit[7G
+bye
+[ma3599@i6 assignment9]$ ls
+typescript  zips.json
+[ma3599@i6 assignment9]$ exit
+exit
+
+Script done on Thu 03 May 2018 12:07:43 PM EDT

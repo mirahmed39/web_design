@@ -1,0 +1,57 @@
+body {
+	font-size: 1.2em;
+	margin-left: 5%;
+	margin-right: 5%;
+	line-height: 1.5;
+	background-color: #efedd2;
+}
+
+#first_about_header {
+	font-family: Comic Sans MS;
+}
+
+.center_header {
+	text-align: center;
+}
+
+.list_style {
+	font-family: sans-serif;
+	font-size: 1.3em;
+}
+
+.section_background {
+	background-color: #F2F2F2;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+p {
+	font-family: Arial;
+}
+
+img:hover {
+	opacity: .8;
+	border: 1px solid black;
+}
+
+ul > li {
+	color: purple;
+	font-family: Helvetica;
+}
+
+a:link {
+	color: red;
+}
+
+a:visited {
+	text-decoration: none;
+	color: green;
+}
+
+a:hover {
+	background-color: hotpink;
+}
+
+a:active {
+	color: blue;
+}

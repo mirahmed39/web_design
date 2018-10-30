@@ -1,0 +1,83 @@
+<DOCTYPE HTML>
+<html>
+<head>
+	<title>HTML Assignment</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<!-- Media query for narrow browser width -->
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="styles/mobile.css" />
+
+	<!-- Media query for smartphones -->
+	<link rel="stylesheet" media="only screen and (max-device-width: 568px)" href="styles/mobile.css" />
+
+	<!-- Media query for medium browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="styles/tablet.css" />
+
+	<!-- Media query for tablets --> 
+	<link rel="stylesheet" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="styles/tablet.css" />
+
+	<!-- Media query for full browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 961px)" href="styles/desktop.css" />
+
+	<!-- Prevent smartphones from scaling pages down -->
+	<meta name="viewport" content="initial-scale=1">
+</head>
+
+<body>
+	<div id="container">
+		<h2 class="center_header" id="first_about_header">About Me</h2>
+		<p class="section_background text">Hello there! My name is Mir Ahmed and I am a senior majoring in Computer Scicene at NYU.
+		I was born and brought up in country in south-east asia called Bangladesh. I took introduction
+		to computer science course in the senior year of high shchool. That was my first exposure to
+		computer science and I have chosen to continue with this field for the rest of my academic career.	
+		</p>
+
+		<h2 class="center_header">Some Interesting Class I took/currently taking</h2>
+
+		<div id="class1" class="boxes">
+			<ul class="list_style text">
+				<li>Algorithmic Problem Solving</li>
+				<li>Natural Language Processing</li>
+				<li>Computer Vision</li>
+			</ul>
+		</div>
+
+		<div id="class2" class="boxes">
+			<ul class="list_style text">
+				<li>Multivariable Calculus</li>
+				<li>Spanish</li>
+				<li>Musical Instruments</li>
+			</ul>
+		</div>
+
+		<div id="class3" class="boxes">
+			<ul class="list_style text">
+				<li>Database Design</li>
+				<li>Applied Internet Technology</li>
+				<li>Writing</li>
+			</ul>
+		</div>
+
+		<div id="class4" class="boxes">
+			<ul class="list_style text">
+				<li>Brain and Behavior</li>
+				<li>IOS Programming</li>
+				<li>Multivariable Calculus</li>
+			</ul>
+		</div>
+
+		
+
+		<div class="clear_div"></div>
+		<p class="clear text"> I very much enjoyed taking computer vision. <a href="http://cs231n.stanford.edu/">Click here</a> to go see the online resource I used for this course.</p>
+
+		<p class="text">The following image shows a the computer being able to detect cars and drawing a box around them.
+		Click on it to get to one of the popular image detection frameworks website.</p>
+		<a href="https://pytorch.org/" target="_blank"><img id="car_image" src="images/cars.jpg"></a>
+
+		<p class="text"> Go to the <a href="about2.html">other page </a> about myself.</p>
+		<p class="text"> Go to the <a href="../../../index.html"> assignments page</a></p>
+	</div>	
+</body>
+
+</html>
+

@@ -1,0 +1,38 @@
+body {
+	background-color: #efedd2;
+}
+#container {
+	width: 961px;
+	margin: 0 auto;
+}
+
+.center_header {
+	text-align: center;
+}
+
+.boxes { 
+	float: left; 
+}
+
+.clear_div {
+	clear: both;
+}
+
+.text {
+	font-family: Arial;
+	font-size: 1.1em;
+	line-height: 1.5;
+}
+
+.images {
+	margin-right: 2%;
+	width: 180px;
+	height:  150px;
+	float: left;
+	border-radius: 10px;
+}
+
+#logos {
+	margin-bottom: 2%;
+}
+

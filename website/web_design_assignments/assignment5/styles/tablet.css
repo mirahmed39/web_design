@@ -1,0 +1,55 @@
+body {
+		background-color: #efedd2;
+}
+#container {
+	max-width: 481px;
+	margin: 0 auto;
+}
+
+.center_header {
+	text-align: center;
+}
+
+.boxes {
+	float: left;
+}
+
+#class3 {
+	clear: both;
+}
+
+.clear_div {
+	clear: both;
+}
+
+#car_image {
+	width: 300px;
+	height:  300px;
+	border-radius: 20px;
+}
+
+.text {
+	font-family: sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+.images {
+	width: 150px;
+	height: 150px;
+	float:  left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border-radius: 20px;
+}
+
+#img3 {
+	clear: both;
+}
+
+#python_img {
+	border-radius: 20px;
+}
+
+
+

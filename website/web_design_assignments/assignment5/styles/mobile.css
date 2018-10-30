@@ -1,0 +1,52 @@
+body {
+	background-color: #efedd2;
+}
+
+#container {
+	max-width: 480px;
+	margin: 0 auto; 
+}
+
+.center_header {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.boxes {
+	display: block;
+}
+
+.clear_div {
+	clear: both;
+}
+
+#car_image {
+	width:  250px;
+	height: 250px;
+	border-radius: 50%;
+}
+
+.text {
+	line-height: 1.5em;
+	font-family: Arial;
+}
+
+.images {
+	width: 150px;
+	height: 150px;
+	display: block;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border-radius: 50%;
+}
+
+#img3 {
+	clear: both;
+}
+
+#python_img {
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+}
+

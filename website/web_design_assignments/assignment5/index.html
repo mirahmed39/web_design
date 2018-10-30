@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Web Design</title>
+		<!-- Media query for narrow browser width -->
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="styles/mobile.css" />
+
+	<!-- Media query for smartphones -->
+	<link rel="stylesheet" media="only screen and (max-device-width: 568px)" href="styles/mobile.css" />
+
+	<!-- Media query for medium browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="styles/tablet.css" />
+
+	<!-- Media query for tablets --> 
+	<link rel="stylesheet" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" href="styles/tablet.css" />
+
+	<!-- Media query for full browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 961px)" href="styles/desktop.css" />
+
+	<!-- Prevent smartphones from scaling pages down -->
+	<meta name="viewport" content="initial-scale=1">	
+</head>
+<body>
+	<p id="desc">Here is a responsive image gallery</p>
+	<div id="container">
+		<img src="images/labor_day.jpeg" class="boxes" id="col1">
+		<img src="images/independence_day.jpg" class="boxes" id="col2">
+		<img src="images/memorial_day.jpeg" class="boxes" id="col3">
+		<img src="images/fall_recess.jpg" class="boxes" id="col4">
+		<!-- 
+		<div id="col1" class="boxes"></div>
+		<div id="col2" class="boxes"></div>
+		<div id="col3" class="boxes"></div>
+		<div id="col4" class="boxes"></div>
+	-->
+	</div>
+</body>
+</html>

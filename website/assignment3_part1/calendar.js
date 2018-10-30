@@ -30,82 +30,82 @@ const holidays = [
 	['742018', 'Independence Day', 'July 4']
 ];
 
-// const holidayPictures = [
-// 	['Labor Day', 'labor-day.jpeg'],
-// 	['Fall Recess', 'fall-recess.jpg'],
-// 	['Thanksgiving Recess', 'thanksgiving.jpeg'],
-// 	['Winter Recess for University Offices', 'winter.jpeg'],
-// 	['Birthday of Martin Luther King Jr.', 'martin.jpg'],
-// 	['President\'s Day', 'presidents-day.jpg'],
-// 	['Spring Recess', 'spring.jpeg'],
-// 	['Memorial Day', 'memorial-day.jpeg'],
-// 	['Independence Day', 'independence-day.jpg']
-// ];
-// const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-// function findHolidays() {
-// 	const input = document.getElementById('date-input').value;
-// 	const target = document.getElementById('output');
-//     const image = document.getElementById('holiday-image');
-//     let holidayName = "";
-// 	const dateObj = new Date(input);
-// 	const startDate = new Date(2017, 8, 1); // september 1st 2017
-// 	const endDate = new Date(2018, 7, 31); // august 31st 2018
-// 	if (dateObj >= startDate && dateObj <= endDate) {
-//         const formattedDate = "" + (dateObj.getMonth() + 1) + (dateObj.getDate() + 1) + dateObj.getFullYear();
-//         let output = months[dateObj.getMonth()] + " " + (dateObj.getDate() + 1) + " is not a school holiday at NYU";
-//         for (let i = 0; i < holidays.length; i++) {
-//             if (formattedDate === holidays[i][0]) {
-//                 output = holidays[i][2] + " is " + holidays[i][1];
-//                 holidayName = holidays[i][1];
-//                 break;
-//             }
-//         }
-//         // check for the correct image
-// 		let imageSrc = 'images/';
-// 		for (let i = 0; i < holidayPictures.length; i++) {
-//             if (holidayPictures[i][0] === holidayName) {
-//             	imageSrc += holidayPictures[i][1];
-// 			}
-//         }
-//         target.innerHTML = output;
-//         image.src = imageSrc;
-//     } else
-//     	target.innerHTML = months[dateObj.getMonth()] + " " + (dateObj.getDate() + 1) + ", " + dateObj.getFullYear()+ " is not a valid day for this" +
-// 			" Calendar Holiday Application";
-// }
-
-const uni_holidays = [
-	// inside it would be arrays of length three
-	// 1st item: date objcet of the holiday, name of the holiday, picture url.
-	[new Date(2017, 8, 3), "Labor Day", "labor-day.jpeg"]
+const holidayPictures = [
+	['Labor Day', 'labor-day.jpeg'],
+	['Fall Recess', 'fall-recess.jpg'],
+	['Thanksgiving Recess', 'thanksgiving.jpeg'],
+	['Winter Recess for University Offices', 'winter.jpeg'],
+	['Birthday of Martin Luther King Jr.', 'martin.jpg'],
+	['President\'s Day', 'presidents-day.jpg'],
+	['Spring Recess', 'spring.jpeg'],
+	['Memorial Day', 'memorial-day.jpeg'],
+	['Independence Day', 'independence-day.jpg']
 ];
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-function findHolidays2() {
+function findHolidays() {
 	const input = document.getElementById('date-input').value;
 	const target = document.getElementById('output');
     const image = document.getElementById('holiday-image');
-    const labor = new Date(2017, 8, 3);
-    console.log("labor day input: month " + labor.getMonth() + " day " + labor.getDate() + " year " + labor.getFullYear());
-
-    const userDate = new Date(input);
-    console.log("user input: month " + userDate.getMonth() + " day " + userDate.getDate() + " year " + userDate.getFullYear());
-    const startDate = new Date(2017, 8, 1);
-    const endDate = new Date(2018, 7, 31);
-    if(userDate >= startDate && userDate <= endDate) {
-    	console.log("fall within range");
-    	// it falls within the range
-    	for(var i = 0; i < uni_holidays.length; i++) {
-    		if (userDate.getTime() == uni_holidays[i][0].getTime()) {
-    			console.log("found match");
-    			image.src = "images/" + uni_holidays[i][2];
-    			output.innerHTML = "it is " + uni_holidays[i][1];
-    		} else {
-    			console.log("could not find match");
-    		}
-    	}
-
-    } else {
-    	target.innerHTML = "Date does not fall within the range";
-    }
+    let holidayName = "";
+	const dateObj = new Date(input);
+	const startDate = new Date(2017, 8, 1); // september 1st 2017
+	const endDate = new Date(2018, 7, 31); // august 31st 2018
+	if (dateObj >= startDate && dateObj <= endDate) {
+        const formattedDate = "" + (dateObj.getMonth() + 1) + (dateObj.getDate() + 1) + dateObj.getFullYear();
+        let output = months[dateObj.getMonth()] + " " + (dateObj.getDate() + 1) + " is not a school holiday at NYU";
+        for (let i = 0; i < holidays.length; i++) {
+            if (formattedDate === holidays[i][0]) {
+                output = holidays[i][2] + " is " + holidays[i][1];
+                holidayName = holidays[i][1];
+                break;
+            }
+        }
+        // check for the correct image
+		let imageSrc = 'images/';
+		for (let i = 0; i < holidayPictures.length; i++) {
+            if (holidayPictures[i][0] === holidayName) {
+            	imageSrc += holidayPictures[i][1];
+			}
+        }
+        target.innerHTML = output;
+        image.src = imageSrc; // images/labor-day.jpg
+    } else
+    	target.innerHTML = months[dateObj.getMonth()] + " " + (dateObj.getDate() + 1) + ", " + dateObj.getFullYear()+ " is not a valid day for this" +
+			" Calendar Holiday Application";
 }
+
+// const uni_holidays = [
+// 	// inside it would be arrays of length three
+// 	// 1st item: date objcet of the holiday, name of the holiday, picture url.
+// 	[new Date(2017, 8, 3), "Labor Day", "labor-day.jpeg"]
+// ];
+
+// function findHolidays2() {
+// 	const input = document.getElementById('date-input').value;
+// 	const target = document.getElementById('output');
+//     const image = document.getElementById('holiday-image');
+//     const labor = new Date(2017, 8, 3);
+//     console.log("labor day input: month " + labor.getMonth() + " day " + labor.getDate() + " year " + labor.getFullYear());
+
+//     const userDate = new Date(input);
+//     console.log("user input: month " + userDate.getMonth() + " day " + userDate.getDate() + " year " + userDate.getFullYear());
+//     const startDate = new Date(2017, 8, 1);
+//     const endDate = new Date(2018, 7, 31);
+//     if(userDate >= startDate && userDate <= endDate) {
+//     	console.log("fall within range");
+//     	// it falls within the range
+//     	for(var i = 0; i < uni_holidays.length; i++) {
+//     		if (userDate.getTime() == uni_holidays[i][0].getTime()) {
+//     			console.log("found match");
+//     			image.src = "images/" + uni_holidays[i][2];
+//     			output.innerHTML = "it is " + uni_holidays[i][1];
+//     		} else {
+//     			console.log("could not find match");
+//     		}
+//     	}
+
+//     } else {
+//     	target.innerHTML = "Date does not fall within the range";
+//     }
+// }
